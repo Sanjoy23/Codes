@@ -1,2 +1,120 @@
-.exe
-.o
+# Ignore object files, shared libraries, and static libraries
+*.o
+*.so
+*.a
+
+# Ignore compiled programs
+*.exe
+*.out
+
+# Ignore all log files
+*.log
+
+# Ignore dependency files
+*.d
+
+# Ignore build directories (e.g., from CMake or other build systems)
+build/
+cmake-build-debug/
+cmake-build-release/
+
+# Ignore temporary files and directories
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Ignore Visual Studio Code settings directory
+.vscode/
+
+# Ignore generated files
+Makefile
+CMakeLists.txt.user
+
+# Ignore executables in Windows
+*.exe
+*.dll
+*.pdb
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore OS generated files
+Thumbs.db
+
+
+# Build Folders
+bin/
+obj/
+publish/
+out/
+
+# Build Results
+*.dll
+*.exe
+*.pdb
+*.apphost
+*.deps.json
+*.runtimeconfig.json
+
+# User-Specific Files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio specific
+.vscode/
+.vs/
+*.sln.ide
+*.sln.docstates
+
+# Configuration Files (optional)
+appsettings.Development.json
+appsettings.Local.json
+appsettings.secrets.json
+
+# Secrets and Keys
+secrets.json
+.env
+
+# NuGet Packages
+*.nupkg
+packages/
+project.lock.json
+
+# Logs
+*.log
+Logs/
+
+# Temporary Files
+*.tmp
+*.temp
+
+# Coverage Reports
+coverage/
+*.coverage
+*.coveragexml
+
+# Database Files
+*.mdf
+*.ldf
+*.sqlite
+dbParkPoint-wal
+dbParkPoint-shm
+
+# macOS System Files
+.DS_Store
+
+# Windows System Files
+Thumbs.db
+desktop.ini
+
+# Rider Specific
+.idea/
+*.sln.iml
+
+# JetBrains IDEs
+*.dotCover
+*.dotMemory
+*.dotTrace
