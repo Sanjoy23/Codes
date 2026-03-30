@@ -36,22 +36,26 @@ namespace Graph
 
             //}
 
-            string s1 = "Five Star";
-            string s2 = "FIVE STAR";
-            int c = s2.CompareTo(s1);
-            Console.WriteLine(c);
+            //string s1 = "Five Star";
+            //string s2 = "FIVE STAR";
+            //int c = s2.CompareTo(s1);
+            //Console.WriteLine(c);
 
-            String str = "She sells sea shells on the sea-shore";
-            int i, j;
-            i = str.IndexOf("s");
-            j = str.IndexOf("s", i + 1);
+            //String str = "She sells sea shells on the sea-shore";
+            //int i, j;
+            //i = str.IndexOf("s");
+            //j = str.IndexOf("s", i + 1);
 
-            foreach (var k in new Range(5, 3))
-            {
-                Console.WriteLine(k); // 5, 6, 7
-            }
-            byte[] buffer = new byte[] { 65 };
-            Span<byte> span = buffer.AsSpan(0, 10);
+            //foreach (var k in new Range(5, 3))
+            //{
+            //    Console.WriteLine(k); // 5, 6, 7
+            //}
+            //byte[] buffer = new byte[] { 65 };
+            //Span<byte> span = buffer.AsSpan(0, 10);
+
+            Recursion.PrintOddNumInRange(10, 100);
+            int[] nums = new int[] { 1, 2, 3, 4, 5 };
+            Console.WriteLine(Recursion.PrintStringReverse("Sanjoy"));
         }
 
         public static bool isBicolorable(int n, List<int>[] adj)
@@ -80,5 +84,11 @@ namespace Graph
             }
             return true;
         }
+    }
+
+    public class Person
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
 }
